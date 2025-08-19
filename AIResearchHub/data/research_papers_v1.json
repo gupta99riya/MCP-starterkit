@@ -1,0 +1,33 @@
+[
+  {
+    "id": 1,
+    "topic": "diffusion",
+    "created": "2025-08-07T02:46:12.534478",
+    "status": "complete",
+    "papers_found": [
+      {
+        "title": "Denoising Diffusion Probabilistic Models",
+        "authors": "Jonathan Ho, Ajay Jain, Pieter Abbeel",
+        "url": "https://arxiv.org/abs/2006.11239"
+      },
+      {
+        "title": "Scalable Diffusion Models with Transformers (DiT)",
+        "authors": "William Peebles, Saining Xie",
+        "url": "https://arxiv.org/abs/2212.09748"
+      }
+    ],
+    "repositories_found": [
+      {
+        "name": "denoising-diffusion-pytorch",
+        "url": "https://github.com/lucidrains/denoising-diffusion-pytorch",
+        "stars": 9748
+      },
+      {
+        "name": "DiT (Diffusion Transformers)",
+        "url": "https://github.com/facebookresearch/DiT",
+        "stars": 7662
+      }
+    ],
+    "notes": "Completed research on diffusion models. Added key implementations (denoising-diffusion-pytorch and DiT) and seminal papers including the original DDPM paper and the DiT paper."
+  }
+]
