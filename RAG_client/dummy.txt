@@ -1,0 +1,37 @@
+[
+  {
+    "title": "Age Classifier",
+    "description": "Write a program that asks for a person's age and classifies them as 'child' (under 13), 'teenager' (13-19), 'adult' (20-64), or 'senior' (65 and above).",
+    "hint": "Use if/elif/else statements to check age ranges. Remember that elif means 'else if'.",
+    "solution": "age = int(input('Enter your age: '))\nif age < 13:\n    print('You are a child')\nelif age <= 19:\n    print('You are a teenager')\nelif age <= 64:\n    print('You are an adult')\nelse:\n    print('You are a senior')",
+    "difficulty": 2
+  },
+  {
+    "title": "Number Guessing Game",
+    "description": "Create a simple number guessing game where the computer picks a number between 1 and 10, and the user has 3 attempts to guess it correctly.",
+    "hint": "Use a for loop with range(3) for attempts. Use if statements to check if the guess is correct, too high, or too low.",
+    "solution": "import random\nsecret_number = random.randint(1, 10)\nprint('I\\'m thinking of a number between 1 and 10. You have 3 guesses!')\n\nfor attempt in range(3):\n    guess = int(input(f'Attempt {attempt + 1}: Enter your guess: '))\n    if guess == secret_number:\n        print('Congratulations! You guessed it!')\n        break\n    elif guess < secret_number:\n        print('Too low!')\n    else:\n        print('Too high!')\nelse:\n    print(f'Sorry, the number was {secret_number}')",
+    "difficulty": 3
+  },
+  {
+    "title": "Multiplication Table",
+    "description": "Write a program that prints the multiplication table for a given number from 1 to 10 using a for loop.",
+    "hint": "Use a for loop with range(1, 11) to multiply the input number by each value from 1 to 10.",
+    "solution": "number = int(input('Enter a number for multiplication table: '))\nprint(f'Multiplication table for {number}:')\nfor i in range(1, 11):\n    result = number * i\n    print(f'{number} x {i} = {result}')",
+    "difficulty": 1
+  },
+  {
+    "title": "Even or Odd Counter",
+    "description": "Create a program that asks the user to enter numbers until they enter 0. Count and display how many even and odd numbers were entered.",
+    "hint": "Use a while loop that continues until the user enters 0. Use the modulo operator (%) to check if a number is even or odd.",
+    "solution": "even_count = 0\nodd_count = 0\n\nprint('Enter numbers (enter 0 to stop):')\nwhile True:\n    number = int(input('Enter a number: '))\n    if number == 0:\n        break\n    elif number % 2 == 0:\n        even_count += 1\n    else:\n        odd_count += 1\n\nprint(f'Even numbers entered: {even_count}')\nprint(f'Odd numbers entered: {odd_count}')",
+    "difficulty": 3
+  },
+  {
+    "title": "Grade Calculator",
+    "description": "Write a program that calculates the average of 5 test scores and assigns a letter grade: A (90-100), B (80-89), C (70-79), D (60-69), F (below 60).",
+    "hint": "Use a for loop to collect 5 scores, calculate the average, then use if/elif statements to assign the letter grade.",
+    "solution": "total_score = 0\nprint('Enter 5 test scores:')\n\nfor i in range(5):\n    score = float(input(f'Enter score {i + 1}: '))\n    total_score += score\n\naverage = total_score / 5\nprint(f'Average score: {average:.1f}')\n\nif average >= 90:\n    grade = 'A'\nelif average >= 80:\n    grade = 'B'\nelif average >= 70:\n    grade = 'C'\nelif average >= 60:\n    grade = 'D'\nelse:\n    grade = 'F'\n\nprint(f'Letter grade: {grade}')",
+    "difficulty": 2
+  }
+]
