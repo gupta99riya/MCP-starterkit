@@ -1,0 +1,10 @@
+{
+    "chat.mcp.serverSampling": {
+        "W06/.vscode/mcp.json: learnpython-mcp": {
+            "allowedModels": [
+                "github.copilot-chat/claude-3.5-sonnet"
+            ]
+        }
+    },
+    "python-envs.pythonProjects": []
+}

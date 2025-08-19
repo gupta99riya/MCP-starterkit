@@ -1,0 +1,47 @@
+{
+    "inputs": [],
+    "servers": {
+        "huggingface": {
+            "url": "https://huggingface.co/mcp",
+            "headers": {
+                "Authorization": "Bearer TOKEN_KEY"
+            }
+        },
+        "github": {
+            "type": "http", 
+            "url": "https://api.githubcopilot.com/mcp/"
+        },
+        "ai-research-hub": {
+            "command": "C:/Users/RiyaGupta/.local/bin/uv.exe",
+            // "args": ["run", "python", "-m", "server"],
+            "args": [
+            "--directory",
+            "C:/Users/RiyaGupta/OneDrive - Zenon/Documents/R&D/genAI comparison/W06/AIResearchHub",
+            "run",
+            "server.py"],
+            "cwd": "C:/Users/RiyaGupta/OneDrive - Zenon/Documents/R&D/genAI comparison/W06/AIResearchHub",
+            "env": {}
+        },
+      "learnpython": {
+         "command": "C:/Users/RiyaGupta/.local/bin/uv.exe",
+         "args": [
+            "--directory",
+            "C:/Users/RiyaGupta/OneDrive - Zenon/Documents/R&D/genAI comparison/W06",
+            "run",
+            "resources_server.py"
+         ]
+      },
+      "RAGtest": {
+         "command": "C:/Users/RiyaGupta/.local/bin/uv.exe",
+         "args": [
+            "--directory",
+            "C:/Users/RiyaGupta/OneDrive - Zenon/Documents/R&D/genAI comparison/W06/RAG_client",
+            "run",
+            "server.py"
+         ],
+         "cwd": "C:/Users/RiyaGupta/OneDrive - Zenon/Documents/R&D/genAI comparison/W06/RAG_client",
+        "env": {}
+      }
+
+    }
+}
